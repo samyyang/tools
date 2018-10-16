@@ -1,0 +1,6 @@
+FROM jdk-8u13:20181013
+MAINTAINER  samyang
+ADD tomcat /tomcat
+EXPOSE  8080
+#CMD /home/apache-tomcat-7.0.79/bin/startup.sh
+ENTRYPOINT ["/tomcat/bin/catalina.sh","run"]
